@@ -4,7 +4,7 @@
 - name: push-image-with-sha
   service: app
   type: push
-  image_name: "gcr.io/YOUR_PROJECT_ID/hello-express"
+  image_name: "gcr.io/portal-wau-co/hello-express"
   image_tag: "{{printf \"%.8s\" .CommitID}}"
   registry: https://gcr.io
   dockercfg_service: codeship_gcr_dockercfg
@@ -12,7 +12,7 @@
   service: app
   type: push
   tag: master
-  image_name: "gcr.io/YOUR_PROJECT_ID/hello-express"
+  image_name: "gcr.io/portal-wau-co/hello-express"
   image_tag: "master"
   registry: https://gcr.io
   dockercfg_service: codeship_gcr_dockercfg

@@ -1,7 +1,7 @@
 app:
   build:
     dockerfile: Dockerfile
-    image: gcr.io/YOUR_PROJECT_ID/hello-express
+    image: gcr.io/portal-wau-co/hello-express
 codeship_gcr_dockercfg:
   image: codeship/gcr-dockercfg-generator
   env_file: .env
